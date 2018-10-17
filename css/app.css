@@ -1,0 +1,148 @@
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+html {
+	font-family: 'Krub', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+body {
+	margin: 0;
+}
+
+input, select, textarea, button {
+	font: inherit;
+}
+
+input, select, textarea, button {
+	padding: 0.625em 1em;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	outline: none;
+	box-sizing: border-box;
+}
+
+button {
+	color: #fff;
+	background-color: #0984e3;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #74b9ff;
+}
+
+button[disabled] {
+	background-color: #636e72;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 1em;
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+}
+
+nav span {
+	font-size: 2em;
+	font-weight: 200;
+}
+
+section#sign-in {
+	width: 25em;
+	max-width: 100%;
+	padding: 1.5em;
+	margin: 0 auto;
+	margin-top: 74px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+section#sign-in h2 {
+	font-size: 1.5em;
+	font-weight: 200;
+}
+
+section#sign-in input, section#sign-in button {
+	display: block;
+	width: 100%;
+	margin-bottom: 0.75em;
+}
+
+section#twits {
+	width: 35em;
+	max-width: 100%;
+	padding: 1.5em;
+	margin: 0 auto;
+	margin-top: 74px;
+	box-sizing: border-box;
+}
+
+section#twits div#loading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10em;
+}
+
+section#twits div#loading div {
+	width: 2em;
+	height: 2em;
+	background-color: #0984e3;
+	animation: spin 0.75s ease infinite;
+}
+
+section#twits div.twee form {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+section#twits div.twee form textarea {
+	flex: 1;
+}
+
+section#twits div.twee form button {
+	margin-left: 0.75em;
+}
+
+section#twits div.twits {
+	margin-top: 1.5em;
+	padding-top: 1.25em;
+	border-top: 1px solid #ddd;
+}
+
+section#twits div.twits div.twit {
+	padding: 0.625em 0.875em;
+	margin-bottom: 1em;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+}
+
+section#twits div.twits div.twit div.username {
+	color: #0984e3;
+	font-size: 0.875em;
+	margin-bottom: 0.375em;
+}
+
+section#twits div.twits div.twit div.content {
+	font-size: 1.125em;
+	line-height: 1.375em;
+}
+
+section#twits div.twits div.twit div.content pre {
+	margin: 0;
+	font: inherit;
+}
